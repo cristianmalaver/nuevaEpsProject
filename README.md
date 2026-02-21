@@ -57,6 +57,15 @@ npm install
 ng serve --open          # abrir en localhost:4200
 
 
+### ENDPOINTS
+-  http://localhost:8080/auth/register                          POST
+-  http://localhost:8080/api/solicitudes                        GET
+-  http://localhost:8080/api/solicitudes                        POST
+-  http://localhost:8080/api/solicitudes?page=0&size=2          GET
+-  http://localhost:8080/auth/login                             POST
+-  http://localhost:8080/api/medicamentos                       GET
+
+
 
 ## 🏗 Funcionalidades
 
@@ -76,6 +85,7 @@ ng serve --open          # abrir en localhost:4200
     - teléfono
     - correo
 - Backend retorna JSON según tipo de medicamento
+
 
 ### Medicamentos
 - Endpoint protegido: `GET /api/medicamentos`
