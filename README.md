@@ -3,7 +3,7 @@ Sistema full-stack para la gestión de solicitudes de medicamentos en una EPS, c
 
 ---
 
-## 🚀 Tecnologías
+## Tecnologías
 
 **Backend:**
 - Java 17+
@@ -20,36 +20,6 @@ Sistema full-stack para la gestión de solicitudes de medicamentos en una EPS, c
 - Arquitectura organizada por features (`auth`, `core`, `solicitudes`)
 
 ---
-
-## 🏗 Funcionalidades
-
-### Autenticación
-- Registro de usuario (`POST /api/auth/register`)
-- Login con JWT (`POST /api/auth/login`)
-- Rutas protegidas por **AuthGuard**
-- Interceptor para enviar token automáticamente
-
-### Solicitudes de medicamentos
-- Listado de solicitudes con paginación y diseño profesional
-- Crear nueva solicitud:
-  - Selección de medicamento (POS / NO POS)
-  - Campos adicionales para medicamentos NO POS:
-    - número de orden
-    - dirección
-    - teléfono
-    - correo
-- Backend retorna JSON según tipo de medicamento
-
-### Medicamentos
-- Endpoint protegido: `GET /api/medicamentos`
-- Respuesta ejemplo:
-
-```json
-[
-  { "id": 1, "nombre": "Acetaminofén", "descripcion": "Analgésico", "esPos": true },
-  { "id": 2, "nombre": "Ibuprofeno", "descripcion": "Antiinflamatorio", "esPos": true },
-  { "id": 3, "nombre": "Medicamento Especial X", "descripcion": "Especial", "esPos": false }
-]
 
 ### Estructura 
 
@@ -85,3 +55,37 @@ mvn spring-boot:run      # levantar servidor puerto 8080 default
 cd frontend
 npm install
 ng serve --open          # abrir en localhost:4200
+
+
+
+## 🏗 Funcionalidades
+
+### Autenticación
+- Registro de usuario (`POST /api/auth/register`)
+- Login con JWT (`POST /api/auth/login`)
+- Rutas protegidas por **AuthGuard**
+- Interceptor para enviar token automáticamente
+
+### Solicitudes de medicamentos
+- Listado de solicitudes con paginación y diseño profesional
+- Crear nueva solicitud:
+  - Selección de medicamento (POS / NO POS)
+  - Campos adicionales para medicamentos NO POS:
+    - número de orden
+    - dirección
+    - teléfono
+    - correo
+- Backend retorna JSON según tipo de medicamento
+
+### Medicamentos
+- Endpoint protegido: `GET /api/medicamentos`
+- Respuesta ejemplo:
+
+```json
+[
+  { "id": 1, "nombre": "Acetaminofén", "descripcion": "Analgésico", "esPos": true },
+  { "id": 2, "nombre": "Ibuprofeno", "descripcion": "Antiinflamatorio", "esPos": true },
+  { "id": 3, "nombre": "Medicamento Especial X", "descripcion": "Especial", "esPos": false }
+]
+
+
