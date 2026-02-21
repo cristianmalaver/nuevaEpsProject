@@ -1,0 +1,13 @@
+/target/                 # Carpeta generada por Maven
+/build/                  # Carpeta generada por Gradle
+/*.log                   # Archivos de log
+/*.jar                   # Jars compilados
+/*.war                   # Wars compilados
+*.class                  # Clases compiladas
+*.iml                    # Archivos de IntelliJ
+/.idea/                  # Configuración del IDE
+/.settings/              # Configuración de Eclipse u otros IDE
+/bin/
+/out/
+/*.db                    # Bases de datos locales
+.env                     # Variables de entorno, si las usas
